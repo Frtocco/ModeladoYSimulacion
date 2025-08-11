@@ -60,9 +60,9 @@ public class Main {
 
     public static void esperar(int segundos) {
         try {
-            Thread.sleep(segundos * 1000L); // L para asegurar long
+            Thread.sleep(segundos * 1000L);
         } catch (InterruptedException e) {
-            Thread.currentThread().interrupt(); // buena práctica
+            Thread.currentThread().interrupt();
             System.err.println("La espera fue interrumpida");
         }
     }
